@@ -1,0 +1,33 @@
+Implementando uma "Lista Dinâmica Duplamente Encadeada
+
+  ListaDinEncadDupla.h: definir
+    - os protótipos das funções
+    - o tipo de dado armazenado na lista
+    - o ponteiro "lista"
+
+
+    ListaDinEncadDupla.c: definir
+    - o tipo de dados "lista"
+    - implementar as funções
+
+
+    Algumas informações básicas sobre a lista:
+      Tamanho?
+      Está cheia?
+      Está vazia?
+
+
+Tipos de inserção:
+  Inicio
+  Meio
+  Fim
+
+
+Tipos de remoção:
+  - início
+  - meio
+  - fim
+
+  
+
+  

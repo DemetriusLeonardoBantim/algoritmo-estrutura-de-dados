@@ -1,0 +1,34 @@
+ListaDinEncad.h:
+  Definir os protótipos das funções
+  O tipo de dado armazenado na lista
+  O ponteiro "lista"
+
+
+ListaDinEncad.c :
+   Tipo de dados "lista"
+   Implementar as suas funções
+
+
+
+No programa principal podemos usar:
+  int x = list_cheia(li)
+  if(lista_cheia(li))
+
+
+Em listas dinamicas não faz muito sentido perguntamos se a lista está cheia...
+
+Agora faz total sentido criarmos uma função para ver se ela está vazia... lista_vazia(Lista* li)
+
+
+
+Consulta em lista dinâmica
+
+Existem 2 maneiras de consultar um elemento de uma lista:
+  - pela posição
+  - pelo conteúdo
+
+Dependem de busca(percorrer os elementos) até encontrar o desejado.
+
+
+
+Lista Dinâmica Duplamente Encadeada

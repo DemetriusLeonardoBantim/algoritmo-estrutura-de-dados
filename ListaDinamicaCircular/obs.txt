@@ -1,0 +1,12 @@
+Lista Dinamica Circular
+  Tipo de lista onde cada elemento aposta para o seu sucessor
+  e o ultimo elemento aposta para o primeiro da lista
+
+
+
+
+  Inserção
+    Também existe o caso onde a inserção é feia em uma "lista" que está vazia.
+
+    A inserção é parecida com a da "Lista Dinâmica Encadeada". Deve-se apenas considerar que agora temos
+    o último elemento apontado para o primeiro.
