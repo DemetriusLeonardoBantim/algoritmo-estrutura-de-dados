@@ -10,3 +10,14 @@ Lista Dinamica Circular
 
     A inserção é parecida com a da "Lista Dinâmica Encadeada". Deve-se apenas considerar que agora temos
     o último elemento apontado para o primeiro.
+
+
+  Remoção na Lista circular
+
+  Os 3 tipos de remoção podem trabalhar juntos. A remoção pode remover um elemento específico da lista
+  o qual pode estar no início, no meio ou no final da lista.
+
+
+  Cuidado:
+    - Não se pode remover de uma lista vazia
+    - Removendo o último nó, a lista fica vazia.

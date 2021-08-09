@@ -123,3 +123,97 @@ int insere_lista_ordenada(Lista* li, struct aluno al){
     }
   }
 }
+
+
+//remoção
+int remove_lista_inicio(Lista* li){
+  if(li == NULL){
+    return 0;
+  }
+  if((*li) == NULL){
+    return 0;
+  }
+  if((*li) == (*li)->prox){ //lista fica vazia
+    free(*li);
+    *li = NULL;
+    return 1;
+  }
+  Elem *atual = *li;
+  while(atual->prox != (*li)) { //procura o último
+    atual = atual->prox;
+  }
+  Elem *no = *li;
+  atual->prox = no->prox;
+  *li = no->prox;
+  free(no);
+  return 1;
+}
+
+int remove_lista_final(Lista* li){
+  if(li == NULL) return 0;
+  if((*li) == NULL) return 0;
+  if((*li) == (*li)->prox) { //lista fica vazia
+    free(*li);
+    *li = NULL;
+    return 1;
+  }
+  Elem *ant, *no = *li;
+  while(no->prox != (*li)){ //procura o último
+    ant = no;
+    no = no->prox;
+  }
+  ant->prox = no->prox;
+  free(no);
+  return 1;
+}
+
+int remove_lista(Lista* li, int mat){
+  if(li == NULL) return 0;
+  if((*li) == NULL) return 0; 
+  Elem *no = *li;
+  if(no->dados.matricula == mat){
+    if(no == no->prox){
+      free(no);
+      *li = NULL;
+      return 1;
+    }else{
+      Elem *ult = *li;
+      while(ult->prox != (*li)){
+        ult = ult->prox;
+      }
+      ult->prox = (*li)->prox;
+      *li = (*li)->prox;
+      free(no);
+      return 1; 
+    }
+  }
+  Elem *ant = no;
+  no = no->prox;
+  while(no != (*li) && no->dados.matricula!= mat){
+    ant = no;
+    no = no->prox;
+  }
+  if(no == *li) return 0;
+  ant->prox = no->prox;
+  free(no);
+  return 1;
+}
+
+
+//consulta
+int consulta_lista_pos(Lista* li, int pos, struct aluno *al){
+  if(li == NULL || (*li) == NULL || pos <=0){
+    return 0;
+  }
+  Elem *no = *li;
+  int i = 1;
+  while(no->prox !(*li) && i < pos){
+    no = no->prox;
+    i++;
+  }
+  if( i != pos) return 0;
+  else{
+    *al = no->dados;
+    return 1;
+  }
+}

@@ -22,3 +22,13 @@ int lista_vazia(Lista* li);
 int insere_lista_inicio(Lista* li, struct aluno al);
 int insere_lista_final(Lista* li, struct aluno al);
 int insere_lista_ordenada(Lista* li, struct aluno al);
+
+
+//Remoção
+int remove_lista_inicio(Lista* li);
+int remove_lista_final(Lista* li);
+int remove_elemento_qualquer(Lista* li, int mat);
+
+
+//consultas
+int consulta_lista_pos(Lista* li, int pos, struct aluno *al);

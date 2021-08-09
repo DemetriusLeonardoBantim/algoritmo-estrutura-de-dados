@@ -18,5 +18,8 @@ int main(){
   int y = lista_vazia(li);
   if(lista_vazia(li));
   
+
+  //remoção
+  int remove_primeiro = remove_lista_inicio(li);
   return 0;
 }

@@ -1,0 +1,15 @@
+Lista encadeada com no descrito:
+  Trata-se de uma variação da Lista Dinamica
+  Pode ser usada em listas simples, duplamente encadeada ou circular
+
+Usa um "nó especial" chamado de "descrito" para armazenar diversas informações sobre a lista
+
+
+Os 3 tipos de remoção podem trabalhar juntos. A remoção pode remover um elemento específico da lista,
+o qual pode estar no início, no meio ou no final da lista.
+
+  Cuidado:
+    nao se pode remover de uma lista vazia
+    removendo o ultimo no, a lista fica  vazia
+    temos dois ponteiros para atualizar:
+      inicio e final
